@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- page content -->
+    <h1>Wow you are amazing you have just run a django app in docker congratulations</h1>
+
+    <h2>
+        Don't mind about the picture that was the only one I could find and don't pretend its smelly
+    </h2>
+    <h2>
+      Also, I can edit the code on my mac, and it changed in the docker container automatically.
+    </h2>
+
+
+    <img src="{% static "docker.png" %}" alt="http://docker.io"/>
+    <img src="https://www.djangoproject.com/s/img/site/hdr_logo.b19c5e60269d.gif">
+    <h3>Created By:</h3>
+    <a href="http://www.slashair.com/">
+        <img src="{% static "me.jpg" %}" style="width:400px;" alt="http://spencercooley.com"/>
+    </a>
+    <a href="/another">click here to see another page</a>
+  </body>
+</html>
